@@ -9,13 +9,21 @@ import UIKit
 
 class TwoViewController: UIViewController {
 
+    @IBOutlet var labelTwo: UILabel!
+    @IBOutlet var labelOne: UILabel!
+    @IBOutlet var followButton: UIButton!
+    @IBOutlet var imageTwo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func back(_ sender: Any) {
+    }
+    
+    @IBAction func follow(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
