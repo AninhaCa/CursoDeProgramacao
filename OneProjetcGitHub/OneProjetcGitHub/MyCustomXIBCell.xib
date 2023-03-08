@@ -16,18 +16,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvY-WA-bIX">
-                        <rect key="frame" x="53" y="29" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-XF-ffv">
-                        <rect key="frame" x="23" y="0.0" width="270" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-XF-ffv">
+                        <rect key="frame" x="16" y="0.0" width="288" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ABl-D2-pO4"/>
+                            <constraint firstAttribute="width" constant="288" id="hmf-U3-08a"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CvY-WA-bIX">
+                        <rect key="frame" x="40" y="29" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="4OA-KP-mK6"/>
+                            <constraint firstAttribute="width" constant="240" id="YUh-vb-cOt"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8KH-XF-ffv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2Dz-un-Eko"/>
+                    <constraint firstItem="8KH-XF-ffv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6cx-WP-7Kf"/>
+                    <constraint firstAttribute="bottom" secondItem="CvY-WA-bIX" secondAttribute="bottom" id="NtQ-uQ-hIq"/>
+                    <constraint firstItem="CvY-WA-bIX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="fLx-e1-LRB"/>
+                    <constraint firstAttribute="trailing" secondItem="CvY-WA-bIX" secondAttribute="trailing" constant="40" id="nzV-Cv-CvI"/>
+                    <constraint firstAttribute="trailing" secondItem="8KH-XF-ffv" secondAttribute="trailing" constant="16" id="oF2-1f-Ycs"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
