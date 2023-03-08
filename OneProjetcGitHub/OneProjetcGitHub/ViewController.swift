@@ -16,9 +16,30 @@ class ViewController: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        myTableView.dataSource = self
+        let XIB = UINib(nibName: "MyCustomXIBCell", bundle: nil)
+        myTableView.register(XIB, forCellReuseIdentifier: "cellXIB")
     }
-
-
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arreyRock.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 2 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MyCustomCell {
+                cell.setup(rockCell: arreyRock[indexPath.row])
+                return cell
+            }
+        } else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "cellXIB", for: indexPath) as? MyCustomXIBCell {
+                cell.setup(rockXIB: arreyRock[indexPath.row])
+                return cell
+            }
+        }
+        
+        return UITableViewCell()
+    }
+}

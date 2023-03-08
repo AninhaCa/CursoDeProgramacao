@@ -17,5 +17,9 @@ class ModalViewController: UIViewController {
     }
     
     @IBAction func buttonPlay(_ sender: Any) {
+        if let navigation = self.storyboard?.instantiateViewController(identifier: "navi") {
+            buttonPlay.backgroundColor = .red
+            self.present(navigation, animated: true)
+        }
     }
 }
