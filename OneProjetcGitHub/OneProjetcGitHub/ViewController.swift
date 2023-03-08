@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myTableView: UITableView!
+    
+    var arreyRock: [Rock] = [
+    Rock(name: "", bibliography: "", members: "", topMusic: "", image: "")
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
