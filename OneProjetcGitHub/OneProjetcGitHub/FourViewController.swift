@@ -9,6 +9,8 @@ import UIKit
 
 class FourViewController: UIViewController {
 
+    var rockFour: Rock = Rock(name: "", bibliography: "", members: "", topMusic: "", image: "")
+    
     @IBOutlet var followButton: UIButton!
     @IBOutlet var labelOne: UILabel!
     @IBOutlet var labelTwo: UILabel!

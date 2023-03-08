@@ -9,6 +9,8 @@ import UIKit
 
 class TwoViewController: UIViewController {
 
+    var rockTwo: Rock = Rock(name: "", bibliography: "", members: "", topMusic: "", image: "")
+    
     @IBOutlet var labelTwo: UILabel!
     @IBOutlet var labelOne: UILabel!
     @IBOutlet var followButton: UIButton!
@@ -20,8 +22,10 @@ class TwoViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
+        
     }
     
     @IBAction func follow(_ sender: Any) {
+       
     }
 }
