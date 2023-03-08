@@ -22,10 +22,14 @@ class TwoViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func follow(_ sender: Any) {
-       
+        if let three = self.storyboard?.instantiateViewController(identifier: "three") as? ThreeViewController {
+            three.rockThree = self.rockTwo
+            followButton.backgroundColor = .red
+            self.navigationController?.pushViewController(three, animated: true)
+        }
     }
 }
