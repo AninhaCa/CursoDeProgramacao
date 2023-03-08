@@ -9,13 +9,21 @@ import UIKit
 
 class FourViewController: UIViewController {
 
+    @IBOutlet var followButton: UIButton!
+    @IBOutlet var labelOne: UILabel!
+    @IBOutlet var labelTwo: UILabel!
+    @IBOutlet var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func back(_ sender: Any) {
+    }
+    
+    @IBAction func follow(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
