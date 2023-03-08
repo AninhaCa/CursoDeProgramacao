@@ -10,6 +10,7 @@ import UIKit
 class ModalViewController: UIViewController {
 
     @IBOutlet var buttonPlay: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

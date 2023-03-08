@@ -9,6 +9,9 @@ import UIKit
 
 class MyCustomXIBCell: UITableViewCell {
 
+    @IBOutlet var label: UILabel!
+    @IBOutlet var imageXIB: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
