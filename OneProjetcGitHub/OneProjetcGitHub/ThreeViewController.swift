@@ -15,10 +15,12 @@ class ThreeViewController: UIViewController {
     @IBOutlet var labelOne: UILabel!
     @IBOutlet var labelTwo: UILabel!
     @IBOutlet var imageThree: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        labelOne.text = rockThree.name
+        labelTwo.text = rockThree.members
+        imageThree.image = UIImage(named: rockThree.image)
     }
     
     @IBAction func back(_ sender: Any) {

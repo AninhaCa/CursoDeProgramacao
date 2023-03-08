@@ -24,6 +24,7 @@ class MyCustomCell: UITableViewCell {
     }
 
     func setup(rockCell: Rock) {
-        
+        label.text = rockCell.name
+        imageCell.image = UIImage(named: rockCell.image)
     }
 }

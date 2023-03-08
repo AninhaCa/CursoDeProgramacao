@@ -15,10 +15,12 @@ class FourViewController: UIViewController {
     @IBOutlet var labelOne: UILabel!
     @IBOutlet var labelTwo: UILabel!
     @IBOutlet var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        labelOne.text = rockFour.name
+        labelTwo.text = rockFour.topMusic
+        image.image = UIImage(named: rockFour.image)
     }
     
     @IBAction func back(_ sender: Any) {

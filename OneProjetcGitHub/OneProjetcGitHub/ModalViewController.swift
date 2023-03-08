@@ -13,7 +13,6 @@ class ModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func buttonPlay(_ sender: Any) {

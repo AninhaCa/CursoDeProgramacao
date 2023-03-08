@@ -24,6 +24,7 @@ class MyCustomXIBCell: UITableViewCell {
     }
     
     func setup(rockXIB: Rock) {
-        
+        label.text = rockXIB.name
+        imageXIB.image = UIImage(named: rockXIB.image)
     }
 }

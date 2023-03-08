@@ -18,7 +18,9 @@ class TwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        labelOne.text = rockTwo.name
+        labelTwo.text = rockTwo.bibliography
+        imageTwo.image = UIImage(named: rockTwo.image)
     }
     
     @IBAction func back(_ sender: Any) {
